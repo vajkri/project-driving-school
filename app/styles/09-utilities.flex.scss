@@ -1,0 +1,54 @@
+/*------------------------------------*\
+		09-utilities.flex
+\*------------------------------------*/
+
+.flex {
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex.flex-2 {
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.flex.flex-2 article {
+  width: 50%;
+}
+
+@media screen and (max-width: 980px) {
+
+  .flex.flex-2 article {
+    width: 100%;
+    margin-bottom: 3em;
+  }
+
+  .flex.flex-2 article:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .flex.flex-2 br {
+    display: none;
+  }
+
+}
