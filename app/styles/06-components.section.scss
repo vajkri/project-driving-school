@@ -2,6 +2,8 @@
 		06-components.article
 \*------------------------------------*/
 
+@import "01-settings";
+
 section.special, article.special {
   text-align: center;
 }
@@ -68,7 +70,7 @@ section.wrapper article header, article.wrapper article header {
 }
 
 header p {
-  color: #bbb;
+  color: $color-grey-300;
   position: relative;
   margin: 0 0 1.5em 0;
 }

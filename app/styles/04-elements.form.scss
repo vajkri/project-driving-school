@@ -2,6 +2,8 @@
 		04-elements.form
 \*------------------------------------*/
 
+@import "01-settings";
+
 form {
   margin: 0 0 2em 0;
 }
@@ -33,7 +35,7 @@ form .field.half.first {
 }
 
 label {
-  color: #555;
+  color: $color-grey-100;
   display: block;
   font-size: 0.9em;
   font-weight: 600;
@@ -50,11 +52,11 @@ textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: #6cc091;
+  background: $color-primary-light-10;
   border-radius: 10px;
   border: none;
-  border: solid 2px #8dcca9;
-  color: #fff;
+  border: solid 2px $color-primary-light-20;
+  color: $color-light;
   display: block;
   outline: 0;
   padding: 0 1em;
@@ -77,8 +79,8 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-  border-color: #4bae77;
-  box-shadow: 0 0 0 1px #4bae77;
+  border-color: $color-primary;
+  box-shadow: 0 0 0 1px $color-primary;
 }
 
 .select-wrapper {
@@ -98,7 +100,7 @@ textarea:focus {
 }
 
 .select-wrapper:before {
-  color: #fff;
+  color: $color-light;
   display: block;
   height: 2.75em;
   line-height: 2.75em;
@@ -142,7 +144,7 @@ input[type="radio"] {
 input[type="checkbox"] + label,
 input[type="radio"] + label {
   text-decoration: none;
-  color: #9a9a9a;
+  color: $color-grey-200;
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
@@ -164,9 +166,9 @@ input[type="radio"] + label:before {
 
 input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
-  background: rgba(144, 144, 144, 0.075);
+  background: $color-grey-200-transparent;
   border-radius: 0;
-  border: solid 1px #8dcca9;
+  border: solid 1px $color-primary-light-20;
   content: '';
   display: inline-block;
   height: 1.65em;
@@ -180,16 +182,16 @@ input[type="radio"] + label:before {
 
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
-  background: #6cc091;
-  border-color: #6cc091;
-  color: #ffffff;
+  background: $color-primary-light-10;
+  border-color: $color-primary-light-10;
+  color: $color-light;
   content: '\f00c';
 }
 
 input[type="checkbox"]:focus + label:before,
 input[type="radio"]:focus + label:before {
-  border-color: #6cc091;
-  box-shadow: 0 0 0 1px #6cc091;
+  border-color: $color-primary-light-10;
+  box-shadow: 0 0 0 1px $color-primary-light-10;
 }
 
 input[type="checkbox"] + label:before {
@@ -201,26 +203,26 @@ input[type="radio"] + label:before {
 }
 
 ::-webkit-input-placeholder {
-  color: #c4e5d3 !important;
+  color: $color-primary-light-30 !important;
   opacity: 1.0;
 }
 
 :-moz-placeholder {
-  color: #c4e5d3 !important;
+  color: $color-primary-light-30 !important;
   opacity: 1.0;
 }
 
 ::-moz-placeholder {
-  color: #c4e5d3 !important;
+  color: $color-primary-light-30 !important;
   opacity: 1.0;
 }
 
 :-ms-input-placeholder {
-  color: #c4e5d3 !important;
+  color: $color-primary-light-30 !important;
   opacity: 1.0;
 }
 
 .formerize-placeholder {
-  color: #c4e5d3 !important;
+  color: $color-primary-light-30 !important;
   opacity: 1.0;
 }

@@ -2,51 +2,45 @@
 		06-components.footer
 \*------------------------------------*/
 
+@import "01-settings";
+
 #footer {
   padding: 6em 0;
-  background: #6cc091;
-  color: #fff;
+  background: $color-primary-light-10;
+  color: $color-light;
   text-align: center;
+
+  @media screen and (max-width: 980px) {
+    padding: 4em 0;
+  }
+
+  @media screen and (max-width: 736px) {
+    padding: 3em 0;
+  }
 }
 
 #footer h3 {
-  color: #FFF;
+  color: $color-light;
   margin-bottom: 2em !important;
 }
 
 #footer label {
   text-align: left;
-  color: #FFF;
+  color: $color-light;
 }
 
 #footer .copyright {
-  color: rgba(255, 255, 255, 0.5);
+  color: $color-light-transparent-50;
   font-size: 0.8em;
   margin: 0 0 2em 0;
   padding: 0;
 }
 
 #footer .copyright a {
-  color: rgba(255, 255, 255, 0.5);
+  color: $color-light-transparent-50;
   text-decoration: none;
 }
 
 #footer .copyright a:hover {
-  color: #FFF;
-}
-
-@media screen and (max-width: 980px) {
-
-  #footer {
-    padding: 4em 0;
-  }
-
-}
-
-@media screen and (max-width: 736px) {
-
-  #footer {
-    padding: 3em 0;
-  }
-
+  color: $color-light;
 }

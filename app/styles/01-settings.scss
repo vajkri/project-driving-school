@@ -2,9 +2,35 @@
 		01-settings.colors
 \*------------------------------------*/
 
-$color-primary: #97a830;
-$color-primary-light-10: lighten($color-primary, 40%);
-$color-primary-light-20: lighten($color-primary, 50%);
+// Old brand colors:
 
-$color-light: #fff;
-$color-dark: #000;
+$color-primary:           #4bae77;
+$color-primary-light-10:  #6cc091;
+$color-primary-light-20:  #8dcca9;
+$color-primary-light-30:  #c4e5d3;
+
+
+// New brand colors:
+
+$color-primary:           #97a830;
+$color-primary-light-10:  lighten($color-primary, 40%);
+$color-primary-light-20:  lighten($color-primary, 50%);
+$color-primary-light-30:  lighten($color-primary, 60%);
+
+
+
+
+
+// Neutral colors:
+
+$color-light:                 #fff;
+$color-light-transparent-50:  rgba($color-light, 0.5);
+$color-dark:                  #000;
+
+
+$color-grey-100:              #555;
+$color-grey-200:              #9a9a9a;
+$color-grey-300:              #bbb;
+$color-grey-400:              #dbdbdb;
+
+$color-grey-200-transparent:  rgba($color-grey-200, 0.075);
