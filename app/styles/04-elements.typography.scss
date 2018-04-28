@@ -12,7 +12,7 @@ body, input, select, textarea {
   line-height: 1.65;
 }
 
-@media screen and (max-width: 1680px) {
+@include mq('xl', max) {
 
   body, input, select, textarea {
     font-size: 12pt;
@@ -20,7 +20,7 @@ body, input, select, textarea {
 
 }
 
-@media screen and (max-width: 1280px) {
+@include mq('lg', max) {
 
   body, input, select, textarea {
     font-size: 12pt;
@@ -28,7 +28,7 @@ body, input, select, textarea {
 
 }
 
-@media screen and (max-width: 980px) {
+@include mq('md', max) {
 
   body, input, select, textarea {
     font-size: 12pt;
@@ -36,7 +36,7 @@ body, input, select, textarea {
 
 }
 
-@media screen and (max-width: 736px) {
+@include mq('sm', max) {
 
   body, input, select, textarea {
     font-size: 12pt;
@@ -44,7 +44,7 @@ body, input, select, textarea {
 
 }
 
-@media screen and (max-width: 480px) {
+@include mq('xs', max) {
 
   body, input, select, textarea {
     font-size: 12pt;
@@ -95,7 +95,7 @@ h3 {
   font-size: 1.75em;
 }
 
-@media screen and (max-width: 480px) {
+@include mq('xs', max) {
 
   h3 {
     font-size: 1.25em;
@@ -185,7 +185,7 @@ hr.major {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1280px) {
+@include mq('lg', max) {
 
   .inner {
     max-width: 90%;
@@ -193,7 +193,7 @@ hr.major {
 
 }
 
-@media screen and (max-width: 480px) {
+@include mq('xs', max) {
 
   .inner {
     max-width: 90%;

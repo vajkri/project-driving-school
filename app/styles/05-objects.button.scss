@@ -33,7 +33,7 @@ button,
   transition: background-color 0.2s ease-in-out,
   color 0.2s ease-in-out;
 
-  @media screen and (max-width: 480px) {
+  @include mq('xs', max) {
     padding: 0;
     width: 100%;
   }

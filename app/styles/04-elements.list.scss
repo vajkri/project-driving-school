@@ -129,7 +129,7 @@ ul.actions.fit.small li {
   padding: 0 0 0 0.5em;
 }
 
-@media screen and (max-width: 480px) {
+@include mq('xs', max) {
 
   ul.actions {
     margin: 0 0 2em 0;

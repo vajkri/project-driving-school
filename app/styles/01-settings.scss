@@ -1,6 +1,11 @@
 /*------------------------------------*\
-		01-settings.colors
+		01-settings
 \*------------------------------------*/
+
+
+/*-----------------------*\
+		COLORS
+\*-----------------------*/
 
 // Old brand colors:
 
@@ -34,3 +39,31 @@ $color-grey-300:              #bbb;
 $color-grey-400:              #dbdbdb;
 
 $color-grey-200-transparent:  rgba($color-grey-200, 0.075);
+
+
+
+
+
+/*-----------------------*\
+		MEDIA QUERIES
+\*-----------------------*/
+
+$breakpoints: (
+  'xs':     480px,
+  'sm':     736px,
+  'md':     980px,
+  'lg':     1280px,
+  'xl':     1680px
+);
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}

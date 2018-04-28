@@ -33,7 +33,7 @@ section.wrapper article header, article.wrapper article header {
   margin: 0;
 }
 
-@media screen and (max-width: 980px) {
+@include mq('md', max) {
 
   section.wrapper, article.wrapper {
     padding: 4em 0;
@@ -41,7 +41,7 @@ section.wrapper article header, article.wrapper article header {
 
 }
 
-@media screen and (max-width: 736px) {
+@include mq('sm', max) {
 
   section.wrapper, article.wrapper {
     padding: 3em 0;
@@ -61,7 +61,7 @@ section.wrapper article header, article.wrapper article header {
 
 }
 
-@media screen and (max-width: 480px) {
+@include mq('xs', max) {
 
   section.wrapper article, article.wrapper article {
     text-align: center;

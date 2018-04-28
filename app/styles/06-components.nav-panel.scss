@@ -80,7 +80,7 @@
   color: currentColor;
   text-decoration: none;
 
-  @media screen and (max-width: 980px) {
+  @include mq('md', max) {
     display: inline-block;
   }
 }

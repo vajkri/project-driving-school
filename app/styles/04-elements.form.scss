@@ -21,7 +21,7 @@ form .field.half.first {
   margin-right: 3%;
 }
 
-@media screen and (max-width: 980px) {
+@include mq('md', max) {
 
   form .field.half {
     display: block;

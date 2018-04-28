@@ -2,6 +2,8 @@
 		09-utilities.flex
 \*------------------------------------*/
 
+@import "01-settings";
+
 .flex {
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
@@ -32,7 +34,7 @@
   width: 50%;
 }
 
-@media screen and (max-width: 980px) {
+@include mq('md', max) {
 
   .flex.flex-2 article {
     width: 100%;
@@ -45,7 +47,7 @@
 
 }
 
-@media screen and (max-width: 480px) {
+@include mq('xs', max) {
 
   .flex.flex-2 br {
     display: none;

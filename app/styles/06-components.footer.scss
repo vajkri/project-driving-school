@@ -10,11 +10,11 @@
   color: $color-light;
   text-align: center;
 
-  @media screen and (max-width: 980px) {
+  @include mq('md', max) {
     padding: 4em 0;
   }
 
-  @media screen and (max-width: 736px) {
+  @include mq('sm', max) {
     padding: 3em 0;
   }
 }

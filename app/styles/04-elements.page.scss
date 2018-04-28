@@ -15,7 +15,7 @@ body {
   -ms-overflow-style: scrollbar;
 }
 
-@media screen and (max-width: 480px) {
+@include mq('xs', max) {
 
   html, body {
     min-width: 320px;

@@ -22,15 +22,15 @@ $color-header-bg-subpage: $color-primary-light-10;
   color: $color-light;
   text-align: right;
 
-  @media screen and (max-width: 980px) {
+  @include mq('md', max) {
     top: 1em;
   }
 
-  @media screen and (max-width: 736px) {
+  @include mq('sm', max) {
     top: .5em;
   }
 
-  @media screen and (max-width: 480px) {
+  @include mq('xs', max) {
     font-size: .9em;
   }
 

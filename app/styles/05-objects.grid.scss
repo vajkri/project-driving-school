@@ -2,6 +2,8 @@
 		05-objects.grid
 \*------------------------------------*/
 
+@import "01-settings";
+
 .row {
   border-bottom: solid 1px transparent;
   -moz-box-sizing: border-box;
@@ -258,7 +260,7 @@
   margin-left: 8.33333%;
 }
 
-@media screen and (max-width: 1680px) {
+@include mq('xl', max) {
 
   .row > * {
     padding: 0 0 0 2em;
@@ -473,7 +475,7 @@
 
 }
 
-@media screen and (max-width: 1280px) {
+@include mq('lg', max) {
 
   .row > * {
     padding: 0 0 0 1.5em;
@@ -688,7 +690,7 @@
 
 }
 
-@media screen and (max-width: 980px) {
+@include mq('md', max) {
 
   .row > * {
     padding: 0 0 0 1.5em;
@@ -903,7 +905,7 @@
 
 }
 
-@media screen and (max-width: 736px) {
+@include mq('sm', max) {
 
   .row > * {
     padding: 0 0 0 1.25em;
@@ -1118,7 +1120,7 @@
 
 }
 
-@media screen and (max-width: 480px) {
+@include mq('xs', max) {
 
   .row > * {
     padding: 0 0 0 1.25em;

@@ -2,6 +2,8 @@
 		05-components.container
 \*------------------------------------*/
 
+@import "01-settings";
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -29,7 +31,7 @@
   width: 80em;
 }
 
-@media screen and (max-width: 1680px) {
+@include mq('xl', max) {
 
   .container.\31 25\25 {
   width: 100%;
@@ -55,7 +57,7 @@
 
 }
 
-@media screen and (max-width: 1280px) {
+@include mq('lg', max) {
 
   .container.\31 25\25 {
   width: 100%;
@@ -81,7 +83,7 @@
 
 }
 
-@media screen and (max-width: 980px) {
+@include mq('md', max) {
 
   .container.\31 25\25 {
   width: 100%;
@@ -107,7 +109,7 @@
 
 }
 
-@media screen and (max-width: 736px) {
+@include mq('sm', max) {
 
   .container.\31 25\25 {
   width: 100%;
@@ -133,7 +135,7 @@
 
 }
 
-@media screen and (max-width: 480px) {
+@include mq('xs', max) {
 
   .container.\31 25\25 {
   width: 100%;
