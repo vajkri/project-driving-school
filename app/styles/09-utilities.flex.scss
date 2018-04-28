@@ -5,60 +5,53 @@
 @import "01-settings";
 
 .flex {
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -ms-flex-pack: justify;
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
-  -moz-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
 }
 
 .flex.flex-2 {
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
   justify-content: space-between;
-}
 
-.flex.flex-2 article {
-  width: 50%;
-}
+  article {
+    width: 50%;
 
-@include mq('md', max) {
+    @include mq('md', max) {
+      width: 100%;
+      margin-bottom: 3em;
 
-  .flex.flex-2 article {
-    width: 100%;
-    margin-bottom: 3em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
-  .flex.flex-2 article:last-child {
-    margin-bottom: 0;
+  br {
+    @include mq('xs', max) {
+      display: none;
+    }
   }
-
 }
-
-@include mq('xs', max) {
-
-  .flex.flex-2 br {
-    display: none;
-  }
-
-}
-
 
 .flex.flex-3 {
 
   .flex__cell {
     width: 33%;
+    padding: 0 4em;
+
+    @include mq('lg', max) {
+      padding: 0 2em;
+    }
+
+    @include mq('sm', max) {
+      width: 100%;
+      margin: 0 auto 1em;
+      padding: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }

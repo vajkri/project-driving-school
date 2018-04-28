@@ -17,7 +17,7 @@ $color-header-bg-subpage: $color-primary-light-10;
   color: $color-light;
   text-align: right;
 
-  @include mq('md', max) {
+  @include mq('lg', max) {
     top: 1em;
   }
 
