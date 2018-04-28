@@ -32,5 +32,9 @@
 
   &:hover {
     color: $color-light;
+
+    .subpage & {
+      color: $color-grey-200;
+    }
   }
 }
