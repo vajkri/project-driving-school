@@ -13,9 +13,26 @@
 
   line-height: 1;
   text-decoration: none;
+
+  @include mq('sm', max) {
+    padding: 0.5em;
+  }
 }
 
 .logo__asset {
+  display: block;
   width: 200px;
   height: auto;
+
+  @include mq('lg', max) {
+    width: 140px;
+  }
+
+  @include mq('sm', max) {
+    width: 120px;
+  }
+
+  @include mq('xs', max) {
+    width: 100px;
+  }
 }

@@ -26,10 +26,6 @@ $color-header-bg-subpage: $color-primary-light-10;
     top: 1em;
   }
 
-  @include mq('sm', max) {
-    top: .5em;
-  }
-
   @include mq('xs', max) {
     font-size: .9em;
   }
