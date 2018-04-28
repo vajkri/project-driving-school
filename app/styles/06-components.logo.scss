@@ -14,7 +14,7 @@
   line-height: 1;
   text-decoration: none;
 
-  @include mq('sm', max) {
+  @include mq('xs', max) {
     padding: 0.5em;
   }
 }
@@ -26,10 +26,6 @@
 
   @include mq('lg', max) {
     width: 140px;
-  }
-
-  @include mq('sm', max) {
-    width: 120px;
   }
 
   @include mq('xs', max) {

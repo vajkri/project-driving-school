@@ -6,11 +6,6 @@
 
 $color-header-bg-subpage: $color-primary-light-10;
 
-.subpage {
-  padding-top: 44px;
-}
-
-
 #header {
   width: 100%;
 
@@ -31,13 +26,12 @@ $color-header-bg-subpage: $color-primary-light-10;
   }
 
   .subpage & {
-    height: 44px;
-
     position: fixed;
     top: 0;
 
-    background: $color-header-bg-subpage;
-    line-height: 44px;
+    background: $color-light;
+    box-shadow: rgba($color-dark, .1) 0 1px 10px 0;
+    color: $color-grey-100;
   }
 }
 
@@ -46,4 +40,18 @@ $color-header-bg-subpage: $color-primary-light-10;
   align-items: center;
 
   position: relative;
+}
+
+
+// Set height of content coming after header
+#header + .wrapper {
+  margin-top: 115.5px;
+
+  @include mq('lg', max) {
+    margin-top: 88px;
+  }
+
+  @include mq('xs', max) {
+    margin-top: 60px;
+  }
 }
