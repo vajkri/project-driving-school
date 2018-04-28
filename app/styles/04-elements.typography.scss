@@ -4,69 +4,38 @@
 
 @import "01-settings";
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
   color: $color-grey-200;
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   font-size: 14pt;
   font-weight: 400;
   line-height: 1.65;
-}
 
-@include mq('xl', max) {
-
-  body, input, select, textarea {
+  @include mq('xl', max) {
     font-size: 12pt;
   }
-
-}
-
-@include mq('lg', max) {
-
-  body, input, select, textarea {
-    font-size: 12pt;
-  }
-
-}
-
-@include mq('md', max) {
-
-  body, input, select, textarea {
-    font-size: 12pt;
-  }
-
-}
-
-@include mq('sm', max) {
-
-  body, input, select, textarea {
-    font-size: 12pt;
-  }
-
-}
-
-@include mq('xs', max) {
-
-  body, input, select, textarea {
-    font-size: 12pt;
-  }
-
 }
 
 a {
   color: $color-primary-light-10;
   text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
-a:hover {
-  text-decoration: none;
-}
-
-strong, b {
+strong,
+b {
   color: $color-grey-100;
   font-weight: 600;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
@@ -79,11 +48,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1.5;
   margin: 0 0 1em 0;
-}
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: inherit;
-  text-decoration: none;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 h2 {
@@ -93,14 +62,14 @@ h2 {
 
 h3 {
   font-size: 1.75em;
-}
 
-@include mq('xs', max) {
+  @include mq('xs', max) {
 
-  h3 {
-    font-size: 1.25em;
+    h3 {
+      font-size: 1.25em;
+    }
+
   }
-
 }
 
 h4 {
@@ -149,23 +118,23 @@ pre {
   font-family: "Courier New", monospace;
   font-size: 0.9em;
   margin: 0 0 2em 0;
-}
 
-pre code {
-  display: block;
-  line-height: 1.75;
-  padding: 1em 1.5em;
-  overflow-x: auto;
+  code {
+    display: block;
+    line-height: 1.75;
+    padding: 1em 1.5em;
+    overflow-x: auto;
+  }
 }
 
 hr {
   border: 0;
   border-bottom: solid 1px $color-grey-400;
   margin: 2em 0;
-}
 
-hr.major {
-  margin: 3em 0;
+  &.major {
+    margin: 3em 0;
+  }
 }
 
 .align-left {
@@ -183,20 +152,12 @@ hr.major {
 .inner {
   max-width: 75em;
   margin: 0 auto;
-}
 
-@include mq('lg', max) {
-
-  .inner {
+  @include mq('lg', max) {
     max-width: 90%;
   }
 
-}
-
-@include mq('xs', max) {
-
-  .inner {
+  @include mq('xs', max) {
     max-width: 90%;
   }
-
 }
