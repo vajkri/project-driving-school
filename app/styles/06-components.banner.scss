@@ -74,6 +74,9 @@
 }
 
 .banner__icon {
+  display: block;
+  min-height: 52px;
+
   color: $color-primary;
   font-size: 2em;
 }
