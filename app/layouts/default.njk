@@ -11,9 +11,11 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <!-- Load Font Awesome "async" -->
-    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" media="none" onload="if(media!='all')media='all'">
-    <noscript><link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css"></noscript>
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="/styles/main.css">
@@ -26,7 +28,7 @@
   <header id="header">
     <div class="header__inner u-inner">
       <a class="logo" href="index.html">
-        <img class="logo__asset" src="../images/logo.png" alt="logo">
+        <img class="logo__asset" src="./images/logo.png" alt="logo">
       </a>
       <nav id="nav">
         <a class="nav__link" href="about.html">Om os</a>
