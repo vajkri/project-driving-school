@@ -4,7 +4,8 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "font-awesome": "fontawesome#^4.7.0",
-    "skel": "^3.0.1"
+    "skel": "^3.0.1",
+    "swiper": "^4.2.5"
   },
   "devDependencies": {
     "chai": "^4.1.2",

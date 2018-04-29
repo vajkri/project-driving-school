@@ -61,6 +61,16 @@
       $('#navPanel')
       .css('transition', 'none');
 
+
+    // Swiper slider
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
   });
 
 })(jQuery);

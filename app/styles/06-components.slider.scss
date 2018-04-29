@@ -1,0 +1,24 @@
+/*------------------------------------*\
+		06-components.special
+\*------------------------------------*/
+
+@import "01-settings";
+
+.swiper-container {
+  width: 100%;
+  max-height: 70vh;
+}
+.swiper-slide {
+  text-align: center;
+  width: auto;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide:nth-child(2n) {
+  width: auto;
+}
+.swiper-slide:nth-child(3n) {
+  width: auto;
+}
