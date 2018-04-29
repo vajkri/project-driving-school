@@ -136,28 +136,3 @@ hr {
     margin: 3em 0;
   }
 }
-
-.align-left {
-  text-align: left;
-}
-
-.align-center {
-  text-align: center;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.inner {
-  max-width: 75em;
-  margin: 0 auto;
-
-  @include mq('lg', max) {
-    max-width: 90%;
-  }
-
-  @include mq('xs', max) {
-    max-width: 90%;
-  }
-}

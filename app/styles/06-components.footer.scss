@@ -5,42 +5,24 @@
 @import "01-settings";
 
 #footer {
-  padding: 6em 0;
-  background: $color-primary-light-10;
-  color: $color-light;
+  background: $color-primary-light-30;
+  color: $color-grey-200;
   text-align: center;
-
-  @include mq('md', max) {
-    padding: 4em 0;
-  }
-
-  @include mq('sm', max) {
-    padding: 3em 0;
-  }
 }
 
 #footer h3 {
-  color: $color-light;
   margin-bottom: 2em !important;
 }
 
 #footer label {
   text-align: left;
-  color: $color-light;
 }
 
 #footer .copyright {
-  color: $color-light-transparent-50;
   font-size: 0.8em;
-  margin: 0 0 2em 0;
   padding: 0;
 }
 
 #footer .copyright a {
-  color: $color-light-transparent-50;
   text-decoration: none;
-}
-
-#footer .copyright a:hover {
-  color: $color-light;
 }

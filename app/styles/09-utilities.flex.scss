@@ -19,10 +19,14 @@
 
     @include mq('md', max) {
       width: 100%;
-      margin-bottom: 3em;
+    }
 
-      &:last-child {
-        margin-bottom: 0;
+    &:not(:last-child) {
+      @include mq('md', max) {
+        margin-bottom: 5em;
+      }
+      @include mq('xs', max) {
+        margin-bottom: 3em;
       }
     }
   }

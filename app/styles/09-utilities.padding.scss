@@ -1,0 +1,29 @@
+/*------------------------------------*\
+		09-utilities.padding
+\*------------------------------------*/
+
+@import "01-settings";
+
+.u-padding--ver {
+  padding: 6em 0;
+
+  @include mq('lg', max) {
+    padding: 3em 0;
+  }
+
+  @include mq('xs', max) {
+    padding: 2em 0;
+  }
+}
+
+.u-padding--ver-sm {
+  padding: 4em 0;
+
+  @include mq('lg', max) {
+    padding: 2.5em 0;
+  }
+
+  @include mq('xs', max) {
+    padding: 1.5em 0;
+  }
+}
