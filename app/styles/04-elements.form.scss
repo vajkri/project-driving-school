@@ -5,6 +5,7 @@
 @import "01-settings";
 
 $form-color: $color-grey-200;
+$form-color-dark: $color-grey-100;
 $form-color-light: $color-grey-300;
 
 form {
@@ -58,12 +59,11 @@ textarea {
   border: solid 2px $form-color;
   border-radius: 10px;
 
-  color: $form-color;
+  color: $form-color-dark;
   text-decoration: none;
 
   &::placeholder {
     color: $form-color-light !important;
-    opacity: 1.0;
   }
 
   &:invalid {
@@ -72,7 +72,6 @@ textarea {
 
   &:focus {
     border-color: $form-color;
-    box-shadow: 0 0 0 1px $form-color;
     box-shadow: 0 0 10px 0 rgba($form-color, .7);
   }
 }
@@ -148,7 +147,7 @@ input[type="radio"] {
       height: 1.65em;
 
       background: $color-grey-200-transparent;
-      border: solid 1px $color-primary-light-20;
+      border: solid 1px $form-color;
       border-radius: 0;
 
       position: absolute;
@@ -168,8 +167,8 @@ input[type="radio"] {
 
   &:checked + label {
     &:before {
-      background: $color-primary-light-10;
-      border-color: $color-primary-light-10;
+      background: $form-color;
+      border-color: $form-color;
       color: $color-light;
       content: '\f00c';
     }
@@ -177,8 +176,8 @@ input[type="radio"] {
 
   &:focus + label {
     &:before {
-      border-color: $color-primary-light-10;
-      box-shadow: 0 0 0 1px $color-primary-light-10;
+      border-color: $form-color;
+      box-shadow: 0 0 0 1px $form-color;
     }
   }
 }
@@ -192,6 +191,5 @@ input[type="radio"] + label:before {
 }
 
 .formerize-placeholder {
-  color: $color-primary-light-30 !important;
-  opacity: 1.0;
+  color: $form-color-light !important;
 }
