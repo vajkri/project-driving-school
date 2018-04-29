@@ -55,7 +55,7 @@ textarea {
   outline: 0;
   appearance: none;
 
-  background: transparent;
+  background-color: transparent;
   border: solid 2px $form-color;
   border-radius: 10px;
 
@@ -63,7 +63,7 @@ textarea {
   text-decoration: none;
 
   &::placeholder {
-    color: $form-color-light !important;
+    color: $form-color !important;
   }
 
   &:invalid {
@@ -71,6 +71,7 @@ textarea {
   }
 
   &:focus {
+    background-color: rgba($form-color-light, 0.1);
     border-color: $form-color;
     box-shadow: 0 0 10px 0 rgba($form-color, .7);
   }
