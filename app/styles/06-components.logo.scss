@@ -6,7 +6,7 @@
 
 .logo {
   margin-right: auto;
-  padding: 0.75em 0.75em 0.75em 0;
+  padding: 0.75em;
 
   background: $color-light;
   border-radius: 5px;
@@ -15,11 +15,12 @@
   text-decoration: none;
 
   @include mq('xs', max) {
-    padding: 0.5em 0.5em 0.5em 0;
+    padding: 0.5em;
   }
 
   .subpage & {
     background: none;
+    padding-left: 0;
   }
 }
 
