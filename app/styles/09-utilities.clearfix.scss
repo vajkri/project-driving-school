@@ -1,0 +1,9 @@
+/*------------------------------------*\
+		09-utilities.align
+\*------------------------------------*/
+
+.u-clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}

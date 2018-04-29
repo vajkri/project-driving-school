@@ -1,0 +1,37 @@
+/*------------------------------------*\
+		09-utilities.block
+\*------------------------------------*/
+
+@import "01-settings";
+
+.u-block {
+
+  &--primary {
+    background: $color-primary-light-30;
+  }
+}
+
+.u-block--spacing-ver {
+  margin: 6em 0;
+
+  @include mq('lg', max) {
+    margin: 3em 0;
+  }
+
+  @include mq('xs', max) {
+    margin: 2em 0;
+  }
+
+}
+
+.u-block--spacing-ver-sm {
+  margin: 4em 0;
+
+  @include mq('lg', max) {
+    margin: 2.5em 0;
+  }
+
+  @include mq('xs', max) {
+    margin: 1.5em 0;
+  }
+}
