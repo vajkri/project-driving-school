@@ -2,16 +2,20 @@
 		05-objects.image
 \*------------------------------------*/
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .image {
   border-radius: 0;
   border: 0;
   display: inline-block;
   position: relative;
-}
 
-.image img {
-  border-radius: 0;
-  display: block;
+  img {
+    border-radius: 0;
+  }
 }
 
 .image.left, .image.right {

@@ -49,10 +49,13 @@
   <!-- Three -->
   <section id="three" class="wrapper u-padding--ver align-center">
     <div class="u-inner u-inner--sm">
-      <div class="flex flex-2">
+      <div class="flex flex-2 featured">
         <article>
           <div class="image round">
-            <img src="./images/square-team.jpg" alt="Hænder som giver knuckles til hinanden" />
+            <img class="featured__image"
+                 src="./images/square-team.jpg"
+                 srcset="./images/square-team.jpg 200w, ./images/square-teamx2.jpg 400w"
+                 alt="Elever smiler og nyder samarbejdet">
           </div>
           <header>
             <h3>Holdinfo</h3>
@@ -71,7 +74,10 @@
         </article>
         <article>
           <div class="image round">
-            <img src="./images/square-car.jpg" alt="Bilen" />
+            <img class="featured__image"
+                 src="./images/square-car.jpg"
+                 srcset="./images/square-car.jpg 200w, ./images/square-carx2.jpg 400w"
+                 alt="Køreskolens bil" />
           </div>
           <header>
             <h3>Tilbud</h3>

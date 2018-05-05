@@ -17,12 +17,12 @@
   article {
     width: 50%;
 
-    @include mq('md', max) {
+    @include mq('sm', max) {
       width: 100%;
     }
 
     &:not(:last-child) {
-      @include mq('md', max) {
+      @include mq('sm', max) {
         margin-bottom: 5em;
       }
       @include mq('xs', max) {
