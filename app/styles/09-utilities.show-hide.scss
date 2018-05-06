@@ -1,0 +1,51 @@
+/*------------------------------------*\
+		09-utilities.show-hide
+\*------------------------------------*/
+
+@import "01-settings";
+
+@mixin hide() {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.u-hide { @include hide(); }
+
+
+
+
+
+// Hide UP TILL specified breakpoint
+
+.u-hide--max-sm {
+  @include mq('sm', max) { @include hide(); }
+}
+
+.u-hide--max-md {
+  @include mq('md', max) { @include hide(); }
+}
+
+.u-hide--max-lg {
+  @include mq('lg', max) { @include hide(); }
+}
+
+
+
+
+
+// Hide FROM specified breakpoint
+
+.u-hide--min-sm {
+  @include mq('sm') { @include hide(); }
+}
+
+.u-hide--min-md {
+  @include mq('md') { @include hide(); }
+}
+
+.u-hide--min-lg {
+  @include mq('lg') { @include hide(); }
+}
