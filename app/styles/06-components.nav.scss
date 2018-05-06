@@ -7,6 +7,9 @@
 @import "01-settings";
 
 #nav {
+  display: inline-flex;
+  align-items: center;
+
   @include mq('md', max) {
     display: none;
   }
@@ -36,5 +39,9 @@
     .subpage & {
       color: $color-grey-200;
     }
+  }
+
+  &.nav__link--icon {
+    font-size: 1.5em;
   }
 }
