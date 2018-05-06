@@ -1,0 +1,29 @@
+/*------------------------------------*\
+		09-utilities.background
+\*------------------------------------*/
+
+@import "01-settings";
+
+.u-bg--mashup {
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgba($color-primary-light-30, 0.945);
+  }
+}
+
+.u-bg--mashup__content {
+  position: relative;
+}
