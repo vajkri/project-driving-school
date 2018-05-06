@@ -67,3 +67,15 @@ $breakpoints: (
     }
   }
 }
+
+/*-----------------------*\
+		BREAK WORD
+\*-----------------------*/
+
+// Breaks word when viewport is not wide enough
+
+@mixin break-word() {
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
+}
