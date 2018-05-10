@@ -1,0 +1,43 @@
+/*------------------------------------*\
+		06-components.contact
+\*------------------------------------*/
+
+@import "01-settings";
+
+.contact {
+  @include mq('sm', max) {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+}
+
+.contact__name {
+  font-size: 1.5em;
+
+  @include mq('sm') {
+    font-size: 1.75em;
+  }
+}
+
+.contact__info {
+  width: 100%;
+
+  @include mq('sm', max) {
+    margin-bottom: 1.5em;
+  }
+
+  @include mq('sm') {
+    width: 33.3333%;
+  }
+}
+
+.contact__map {
+  width: 100%;
+
+  @include mq('sm') {
+    width: 66.6666%;
+  }
+}

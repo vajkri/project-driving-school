@@ -1,0 +1,30 @@
+/*------------------------------------*\
+		06-components.map
+\*------------------------------------*/
+
+@import "01-settings";
+
+.map {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+
+  position: relative;
+
+  @include mq('xs') {
+    padding-top: 75%;
+  }
+
+  @include mq('md') {
+    padding-top: 50%;
+  }
+}
+
+.map__asset {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}

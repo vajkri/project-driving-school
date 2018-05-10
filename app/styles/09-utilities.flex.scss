@@ -12,13 +12,9 @@
 }
 
 .flex.flex-2 {
-  justify-content: space-between;
-
   article {
-    width: 50%;
-
-    @include mq('sm', max) {
-      width: 100%;
+    @include mq('sm') {
+      width: 50%;
     }
 
     &:not(:last-child) {

@@ -1,6 +1,6 @@
 {% extends "layouts/default.njk" %}
 
-{% block documentTitle %}Kontakt os{% endblock %}
+{% block documentTitle %}Kontakt{% endblock %}
 {% block documentDescription %}
   Om Nybys køreskole, kørelæren
 {% endblock %}
@@ -14,11 +14,46 @@
 {% block content %}
   <!-- Three -->
   <section id="three" class="wrapper u-padding--ver">
-    <div class="u-inner u-inner--sm">
+    <div class="u-inner">
       <header class="align-center">
-        <h1 class="section__title">Kontakt os</h1>
-        <p>Indhold på vej...</p>
+        <h1 class="section__title">Kontakt</h1>
       </header>
+
+      <div class="contact flex">
+        <article class="contact__info" itemscope itemtype="http://schema.org/Organization">
+          <h2 class="contact__name" itemprop="name">Nybys Køreskole</h2>
+          <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <strong>Adresse:</strong><br>
+            <span itemprop="streetAddress">Ørbækvej 101, 1. sal</span><br>
+            <span itemprop="postalCode">5220</span>
+            <span itemprop="addressLocality">Odense SØ</span>
+          </p>
+          <p>
+            <strong>Telefon:</strong><br>
+            <a href="tel:004522255152"><span itemprop="telephone">+45 22 25 51 52</span></a>
+          </p>
+          <p>
+            <strong>Email:</strong><br>
+            <a href="mailto:kmnyby@gmail.com"><span itemprop="email">kmnyby@gmail.com</span></a>
+          </p>
+          <p>
+            <strong>CVR:</strong><br>
+            <span itemprop="taxID">34296820</span>
+          </p>
+        </article>
+
+        <article class="contact__map">
+          <h2 class="u-hide">Vores beliggenhed</h2>
+          <div class="map">
+            <iframe
+              class="map__asset"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2266.772867047581!2d10.430150315916121!3d55.379419980455175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x27e9b72be8506b00!2sNyby%60s+K%C3%B8reskole!5e0!3m2!1sda!2sdk!4v1525984856029"
+              frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+          </div>
+        </article>
+      </div>
+
     </div>
   </section>
 {% endblock %}
