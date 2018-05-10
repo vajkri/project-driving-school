@@ -12,26 +12,28 @@ form {
   margin: 0 0 2em 0;
 }
 
-form .field {
-  margin-bottom: 1.5em;
+form .field-row {
+  display: flex;
+  flex-wrap: wrap;
 
-  &.half {
-    display: inline-block;
-    width: 48%;
+  .field.half {
+    display: block;
+    width: 100%;
 
-    @include mq('md', max) {
-      display: block;
-      width: 100%;
+    @include mq('sm') {
+      width: 48.5%;
     }
 
     &.first {
-      margin-right: 3%;
-
-      @include mq('md', max) {
-        margin-right: 0;
+      @include mq('sm') {
+        margin-right: 3%;
       }
     }
   }
+}
+
+form .field {
+  margin-bottom: 1.5em;
 }
 
 label {
