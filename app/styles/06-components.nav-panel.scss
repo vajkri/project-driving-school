@@ -20,8 +20,8 @@
   top: 0;
   z-index: 10010;
 
-  background: $color-primary;
-  color: $color-primary-light-10;
+  background: $color-primary-light-10;
+  color: $color-light;
 
   transform: translateX(20em);
   transition: transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
@@ -39,11 +39,14 @@
 
   border-top: solid 1px $color-primary-light-20;
 
-  color: $color-primary-light-10;
   font-weight: 400;
 
   &:first-child {
     border: none;
+  }
+
+  &:hover {
+    color: $color-light;
   }
 }
 
@@ -60,7 +63,7 @@
   transition: color 0.2s ease-in-out;
 
   &:hover {
-    color: inherit;
+    color: $color-light;
   }
 }
 
