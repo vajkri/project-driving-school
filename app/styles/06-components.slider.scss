@@ -4,36 +4,61 @@
 
 @import "01-settings";
 
+// Generic slider styles
+
 .swiper-container {
   width: 100%;
-  max-height: 70vh;
-
-  @include mq('sm', max) {
-    height: 50vh;
-  }
 }
 
 .swiper-slide {
   text-align: center;
-  width: auto;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
-
-  img {
-    height: 100%;
-  }
 }
 
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background: $color-light;
-  opacity: .3;
+  background: $color-primary-light-10;
+  opacity: .5;
 }
 
 .swiper-pagination-bullet-active {
   background: $color-primary;
   opacity: 1;
+}
+
+
+
+
+
+// Specific slider styles
+
+// Car slider
+.slider--car.swiper-container {
+  max-height: 70vh;
+
+  @include mq('sm', max) {
+    height: 50vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    width: auto;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 100%;
+    }
+  }
+}
+
+// Review slider
+.slider--reviews.swiper-container {
+  height: 100%;
 }

@@ -62,14 +62,32 @@
       .css('transition', 'none');
 
 
-    // Swiper slider
-    var swiper = new Swiper('.swiper-container', {
+    // Swiper sliders
+    var swiperCar = new Swiper('.js-swiper-car', {
       slidesPerView: 'auto',
       spaceBetween: 0,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
+    });
+
+    var swiperReviews = new Swiper('.js-swiper-reviews', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 6000,
+      },
+      loop: true,
+      breakpoints: {
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        980: {
+          slidesPerView: 2
+        }
+      }
     });
   });
 

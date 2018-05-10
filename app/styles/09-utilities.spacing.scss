@@ -27,3 +27,35 @@
     padding: 1.5em 0;
   }
 }
+
+.u-margin--top-sm {
+  margin-top: 2em;
+
+  @include mq('xs', max) {
+    margin-top: 1em;
+  }
+}
+
+.u-margin--ver {
+  margin: 6em 0;
+
+  @include mq('lg', max) {
+    margin: 3em 0;
+  }
+
+  @include mq('xs', max) {
+    margin: 2em 0;
+  }
+}
+
+.u-margin--ver-sm {
+  margin: 4em 0;
+
+  @include mq('lg', max) {
+    margin: 2.5em 0;
+  }
+
+  @include mq('xs', max) {
+    margin: 1.5em 0;
+  }
+}

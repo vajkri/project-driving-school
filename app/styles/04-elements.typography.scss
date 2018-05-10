@@ -40,9 +40,10 @@ i {
 }
 
 p {
+  margin-bottom: 1.25em;
 
-  &:not(:last-child) {
-    margin-bottom: 1.25em;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
