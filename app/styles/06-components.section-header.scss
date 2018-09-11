@@ -5,10 +5,13 @@
 @import "01-settings";
 
 .section-header {
-  margin-bottom: 2em;
 
-  @include mq('sm') {
-    margin-bottom: 4em;
+  &:not(:last-child) {
+    margin-bottom: 2em;
+
+    @include mq('sm') {
+      margin-bottom: 4em;
+    }
   }
 
   &--centered {

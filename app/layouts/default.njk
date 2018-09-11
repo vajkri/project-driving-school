@@ -73,30 +73,34 @@
 
       <h3>Kontakt os</h3>
 
-      <form action="#" method="post">
+      <form action="https://www.enformed.io/o1yxc7d2" method="POST">
 
         <div class="field-row">
           <div class="field half first">
             <label for="name">Navn</label>
-            <input name="name" id="name" type="text" placeholder="Navn">
+            <input name="name" id="name" type="text" placeholder="Navn" required>
           </div>
           <div class="field half">
             <label for="email">Email</label>
-            <input name="email" id="email" type="email" placeholder="Email">
+            <input name="email" id="email" type="email" placeholder="Email" required>
           </div>
         </div>
 
         <div class="field">
           <label for="message">Besked</label>
-          <textarea name="message" id="message" rows="6" placeholder="Besked"></textarea>
+          <textarea name="message" id="message" rows="6" placeholder="Besked" required></textarea>
         </div>
         <ul class="actions">
           <li><input class="button dark" value="Send besked" type="submit"></li>
         </ul>
+
+        <input type="hidden" name="*default_email" value="krisztavajda@gmail.com" />
+        <input type="hidden" name="*subject" value="Nybyskøreskole.dk kontakt-mail" />
+        <input type="hidden" name="*honeypot" />
       </form>
 
       <div class="copyright">
-        &copy; Nybys Køreskole 2018.
+        &copy; Nybys Køreskole. Tlf: <a href="tel:004522255152">2225 5152</a>
       </div>
 
     </div>
