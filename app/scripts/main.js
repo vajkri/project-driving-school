@@ -91,6 +91,25 @@
         }
       }
     });
+
+    // Scroll events
+    var debounce_timer;
+    $(window).scroll(function() {
+      if(debounce_timer) {
+        window.clearTimeout(debounce_timer);
+      }
+
+      debounce_timer = window.setTimeout(function() {
+        if($(window).scrollTop()) {
+          $('body').addClass('has-scrolled')
+        } else {
+          $('body').removeClass('has-scrolled')
+        }
+      }, 50);
+    });
+
+
+
   });
 
 })(jQuery);
