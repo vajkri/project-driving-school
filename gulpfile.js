@@ -86,7 +86,11 @@ gulp.task('views:reload', ['views'], () => {
 
 gulp.task('images', () => {
   return gulp.src('app/images/**/*')
-    .pipe($.cache($.imagemin()))
+    .pipe($.imagemin([
+      $.imagemin.gifsicle({interlaced: true}),
+      $.imagemin.jpegtran({progressive: true}),
+      $.imagemin.optipng({optimizationLevel: 5})
+    ]))
     .pipe(gulp.dest('dist/images'));
 });
 
