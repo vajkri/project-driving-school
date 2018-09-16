@@ -64,6 +64,7 @@
 
     // Swiper sliders
     var swiperCar = new Swiper('.js-swiper-car', {
+      initialSlide: 0,
       slidesPerView: 'auto',
       spaceBetween: 0,
       pagination: {
@@ -73,6 +74,7 @@
     });
 
     var swiperReviews = new Swiper('.js-swiper-reviews', {
+      initialSlide: 0,
       slidesPerView: 3,
       spaceBetween: 30,
       autoplay: {
